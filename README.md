@@ -35,6 +35,18 @@ mvn clean package
 mvn spring-boot:run
 ```
 
+or also
+
+
+## Docker
+
+### Run the application with Docker Compose
+
+Make sure Docker is installed and running on your machine. Then run:
+
+```bash
+docker-compose up --build
+
 ---
 
 ## Swagger
