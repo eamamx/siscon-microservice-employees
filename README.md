@@ -47,7 +47,7 @@ Make sure Docker is installed and running on your machine. Then run:
 ```bash
 docker-compose up --build
 
----
+```
 
 ## Swagger
 
