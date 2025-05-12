@@ -1,0 +1,2 @@
+INSERT INTO EMPLOYEE (id, first_name, middle_name, last_name, second_last_name, age, gender, birth_date, position)
+VALUES (1, 'Eduardo', 'Antonio', 'Morales', 'Avila', 41, 'M', '1983-11-10', 'Engineer');
