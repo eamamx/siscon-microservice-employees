@@ -10,7 +10,38 @@
 			"name": "employees",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/employees/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
 			},
 			"response": []
 		},
@@ -37,6 +68,82 @@
 					"path": [
 						"api",
 						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save all employess",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n  {\r\n    \"firstName\": \"nombre\",\r\n    \"middleName\": \"segundo nombre\",\r\n    \"lastName\": \"apellido\",\r\n    \"secondLastName\": \"segundo apellido\",\r\n    \"age\": 20,\r\n    \"gender\": \"m\",\r\n    \"birthDate\": \"12-10-1984\",\r\n    \"position\": \"position\"\r\n  }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"id\": 1,\r\n    \"firstName\": \"nombre\",\r\n    \"middleName\": \"segundo nombre\",\r\n    \"lastName\": \"apellido\",\r\n    \"secondLastName\": \"segundo apellido\",\r\n    \"age\": 20,\r\n    \"gender\": \"m\",\r\n    \"birthDate\": \"12-10-1984\",\r\n    \"position\": \"otra\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/employees/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"1"
 					]
 				}
 			},
