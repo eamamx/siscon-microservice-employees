@@ -27,3 +27,10 @@ logging:
     name: mi-aplicacion.log
     max-size: 10MB
     max-history: 5
+
+header:
+  ctrl:
+    constante:
+      api:
+        algoritmo:"HSB"
+
